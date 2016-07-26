@@ -7,14 +7,22 @@ The staging area allows you to get files ready to commit.  It allows experimenta
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+There should only be one logical change in git diff --staged.  If there are more files you'll need to rework it.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+Experimental ideas.  If those ideas don't work out it's easy to revert to the working version (master)
 
 How do the diagrams help you visualize the branch structure?
+Branching can get very confusing.  The graph helps make it easier to understand.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+The merge lets git do its best to merge all changes into one file.  The diagram shows both changes merged into one master.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+Pro is that if there are no conflicts than Git should have the ability to add both features w/o a problem.
+Another Pro is that if there are conflicts, Git can point them out.
+Con is that there might be an error with the auto-merge and might not be obvious.
+Another Con is that, well, conflicts aren't exactly easy to fix.
